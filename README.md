@@ -16,3 +16,26 @@ This repository has been created to track my Data structure and algorithm proble
     if stack is empty , we know the given list was a balanced set of parenthesis
     if not , the given list was not a balanced set of parenthesis
 ```
+
+```
+2. convert decimal to binary number 
+    # In this problem, we make the use of Stack data structure to convert a decimal number to binary
+    Here, first we create a stack and a empty string to store the binary number
+    In this problem, we push the remainder of decimal_number / 2  in the stack
+    Therefore, we run a loop until the decimal_number is >=1 
+        get the remainder for decimal_number / 2 (decimal_number % 2)  and push it into the stack
+        divide the decimal_number by 2 and keep the integer value i.e decimal_number = int(decimal_number / 2)
+    once, we finish storing all the remainder into the stack
+    we now wil do pop operation on stack and concatenate the top of the stack to string binary number until the stack gets empty
+    finally , return the binary number in string
+
+```
+
+```
+3. reverse a string
+    # In this problem, we make the use of Stack data structure to reverse the string
+    Here, first we create a empty stack  and a reverse_string variable 
+    we go through the all the charcters in the string and push all of them to stack one at a time
+    The next step is to loop through the stack, pop the char from stack and append that char to reverse_string until the stack gets empty
+    Finally, return the reverse_string
+```
